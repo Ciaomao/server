@@ -1,2 +1,2 @@
 #!/bin/bash
-java ServerSide $1
+java Server $1

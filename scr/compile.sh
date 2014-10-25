@@ -1,2 +1,2 @@
 #!/bin/bash
-javac ServerSide.java
+javac Server.java
