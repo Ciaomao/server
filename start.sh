@@ -1,2 +1,2 @@
 #!/bin/bash
-java RunService $1
+java Server $1

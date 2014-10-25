@@ -1,14 +1,15 @@
 Yasser Afifi
-<<<<<<< HEAD
-14303154
-=======
+ID: 14303154
 
-all the files are in the same directory 
+all the files are in the same directory
 
-compile.sh will compile the two java files in which the server resides.
+compile.sh will compile the server java file.
 
-start.sh will run the server and it requires one argument which represent the port number
+start.sh will run the server and it REQUIRES one integer argument which represent the port number
 
-runService is the starting point for the application
+compileClient.sh will compile the client java file.
 
->>>>>>> 3fa4c2fe5eb4bfb260c6cf240ad7af40583d42ab
+startClient.sh will run the client and it REQUIRES one integer argument which represent the port number
+
+
+the server is expecting the client to send data as DataInputStream object  and it uses readUTF() to read from it. the server also uses writeUTF() to write back to the client.
