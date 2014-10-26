@@ -9,7 +9,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		  if(args.length != 1) {
-	            System.err.println("Error! Incorrect arguments! Please try again by typing TCP port number as only argument");
+	            System.err.println("Error! Incorrect arguments! Please try again by typing TCP port number as the only argument");
 	            System.exit(1);
 	        }
 		int port = Integer.parseInt(args[0]);

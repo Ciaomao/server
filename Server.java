@@ -17,7 +17,7 @@ public class Server implements Runnable {
 
 	public static void main(String[] args) {
 		  if(args.length != 1) {
-	            System.err.println("Error! Incorrect arguments! Please try again by typing TCP port number as only argument");
+	            System.err.println("Error! Incorrect arguments! Please try again by typing TCP port number as the only argument");
 	            System.exit(1);
 	        }
 		int port = Integer.parseInt(args[0]);
@@ -53,7 +53,7 @@ public class Server implements Runnable {
 					toClient.flush();
 					System.exit(1);
 				} else if (clientText.contains("HELO")) {
-					String helo = clientText
+					String helo = clientText + "\n"
 							+ " IP : "+ clientSocket.getLocalAddress() + "\n" 
 							+"Port: "+ clientSocket.getLocalPort() + "\n"
 							+ "StudentID: 14303154";
